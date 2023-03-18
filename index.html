@@ -14,8 +14,8 @@
 </head>
 
 <body>
-    <header>
-        <div class="align-items-center d-flex justify-content-between px-3 py-2 text-white"
+    <header class="container">
+        <div class="align-items-center d-flex justify-content-between px-3 py-2 text-white d-flex-res"
             style="background: #14142B;">
             <p class="mb-0">ইআইআইএন : ১২৫৯৮৩, বিদ্যালয় কোড : ৭৩০০ <span class="eiiin"> (দিনাজপুর বোর্ড)</span> </p>
             <div>
@@ -30,7 +30,7 @@
                 <img class="img-fluid" src="img/logo.png" alt="" style="width: 100px;">
             </div>
             <div>
-                <h2 class="fs-2 fw-bold text-success">টেপ্রীগঞ্জ আদর্শ দ্বি মুখী উচ্চ বিদ্যালয়</h2>
+                <h2 class="fw-bold text-center text-success">টেপ্রীগঞ্জ আদর্শ দ্বি মুখী উচ্চ বিদ্যালয়</h2>
                 <p class="text-center fw-bold" style="color: #2E3192;">⦿ শিক্ষা ⦿ শৃঙ্খলা ⦿ সেবা </p>
             </div>
             <div class="phone-mail">
@@ -69,7 +69,7 @@
     </header>
     <main>
         <!-- notice board -->
-        <div class=" mt-5 px-5">
+        <div class=" mt-5 container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="d-flex justify-content-between align-items-center breaking-news bg-white"
@@ -95,12 +95,12 @@
         </div>
         <!--  -->
         <!-- banner-img -->
-        <div class="bg-white d-flex justify-content-between my-5 px-5 py-4">
+        <div class="bg-white container d-flex justify-content-between my-5 py-4">
             <div class="d-flex flex-column gap-4 img-thumbnail">
                 <img src="img/a.jpg" class="img-fluid" alt="">
                 <button class="btn btn-danger rounded-4">মুজিব কর্ণার</button>
             </div>
-            <div class="d-flex flex-column gap-4 img-thumbnail">
+            <div class="d-flex flex-column gap-4 img-thumbnail phone-mail">
                 <img src="img/b.jpg" class="img-fluid" alt="">
                 <p class="fs-5 mb-0 text-center">বাংলাদেশের স্বাধীনতা ও বিজয় অর্জনের ৫০ বছর পূর্তি
                 </p>
@@ -113,8 +113,8 @@
         </div>
         <!-- slider & notice -->
 
-        <div class="px-5 row">
-            <div class="col-lg-8 col-md-12">
+        <div class="container mx-auto row py-3" style="background: #E8F0FE">
+            <div class="col-lg-8 col-md-12 p-0">
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -140,7 +140,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-12" style="color: #34495E;">
+            <div class="col-lg-4 col-md-12 p-0" style="color: #34495E;">
                 <p class="bg-white fs5 fw-bold mb-0 ms-2 ps-2 py-2">নোটিশ</p>
                 <div class=" mb-3 px-2 py-3 limited-tags">
                     <a href="" class="bg-white mb-2 p-3">RFQ for Supply of Metting Room Conference Sound system for
@@ -159,7 +159,7 @@
             </div>
         </div>
         <!-- quotes section-->
-        <div class=" d-flex gap-4 my-3 px-5 py-3">
+        <div class="container d-flex gap-4 my-3  py-3 d-flex-res p-0">
             <div class="bg-white d-flex w-50 res-quates">
                 <div class="py-4 text-center w-50">
                     <img src="img/Pricident-Dipu-Moni.png" alt="" srcset="" width: 80px; height: 80px;
@@ -207,7 +207,7 @@
             </div>
         </div>
         <!-- history of the school -->
-        <div class="d-flex fs-5 mx-5 py-4 row">
+        <div class="container mx-auto d-flex fs-5  py-4 row">
             <div class="col-lg-5 col-md-12 text-center">
                 <img src="img/logo.png" alt="" srcset="" class="img-fluid p-3 shadow-lg" style="width: 308px;">
                 <p style="color: #180092;
@@ -216,7 +216,7 @@
                 </p>
             </div>
             <div class="col-md-12 col-lg-7">
-                <p class="mb-5" style="text-align: justify;
+                <p class="mb-3" style="text-align: justify;
                 color: #000000;
                 font-weight: 500;"> <span>১৯৬৫</span> সালে পঞ্চগড় জেলার দেবীগঞ্জ উপজেলার সকল শ্রেণি পেশার মানুষের নিকট
                     একটি বিশেষায়িত শিক্ষা প্রতিষ্ঠান উপহার দেয়ার অঙ্গীকার দিয়ে টেপ্রীগঞ্জ আদর্শ দ্বি মুখী উচ্চ বিদ্যালয়
@@ -233,23 +233,48 @@
             </div>
         </div>
         <!-- image and videos gallery -->
-        <div class="bg-white p-2 row text-center">
+        <div class="bg-white container mx-auto py-2 row img-full">
             <div class="col-md-12 col-lg-6">
                 <h2>ফটো গ্যালারি</h2>
-                <img src="img/building1.jpg" class="img-fluid img-thumbnail" style="width: 300px; height: 200px;" loading="lazy">
-                <img src="img/building2.jpg" class="img-fluid img-thumbnail" style="width: 300px; height: 200px;" loading="lazy">
-                <img src="img/building1.jpg" class="img-fluid img-thumbnail" style="width: 300px; height: 200px;" loading="lazy">
-                <img src="img/building2.jpg" class="img-fluid img-thumbnail" style="width: 300px; height: 200px;" loading="lazy">
-              </div>
-              
+                <img src="img/building1.jpg" class="img-fluid img-thumbnail img-full" style="width:250px; height: 150px;"
+                    loading="lazy">
+                <img src="img/building2.jpg" class="img-fluid img-thumbnail img-full" style="width:250px; height: 150px;"
+                    loading="lazy">
+                <img src="img/building1.jpg" class="img-fluid img-thumbnail img-full" style="width:250px; height: 150px;"
+                    loading="lazy">
+                <img src="img/building2.jpg" class="img-fluid img-thumbnail img-full" style="width:250px; height: 150px;"
+                    loading="lazy">
+            </div>
             <div class="col-md-12 col-lg-6">
+                <h2>ফটো গ্যালারি</h2>
+                <img src="img/building1.jpg" class="img-fluid img-thumbnail img-full" style="width:250px; height: 150px;"
+                    loading="lazy">
+                <img src="img/building2.jpg" class="img-fluid img-thumbnail img-full" style="width:250px; height: 150px;"
+                    loading="lazy">
+                <img src="img/building1.jpg" class="img-fluid img-thumbnail img-full" style="width:250px; height: 150px;"
+                    loading="lazy">
+                <img src="img/building2.jpg" class="img-fluid img-thumbnail img-full" style="width:250px; height: 150px;"
+                    loading="lazy">
+            </div>
+
+            <!-- <div class="col-md-12 col-lg-6">
                 <h2>ভিডিও গ্যালারি </h2>
-                <iframe src="https://www.youtube.com/embed/DpHUnmbPyL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="img-thumbnail" style="width: 300px; height: 200px;" loading="lazy"></iframe>
-                <iframe src="https://www.youtube.com/embed/DpHUnmbPyL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="img-thumbnail" style="width: 300px; height: \privacy-policy\200px;" loading="lazy"></iframe>
-                <iframe src="https://www.youtube.com/embed/DpHUnmbPyL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="img-thumbnail" style="width: 300px; height: 200px;" loading="lazy"></iframe>
-                <iframe src="https://www.youtube.com/embed/DpHUnmbPyL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="img-thumbnail" style="width: 300px; height: 200px;" loading="lazy"></iframe>
-              </div>
-              
+                <iframe src="https://www.youtube.com/embed/DpHUnmbPyL0" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen class="img-thumbnail img-full" style="width:250px; height: 150px;" loading="lazy"></iframe>
+                <iframe src="https://www.youtube.com/embed/DpHUnmbPyL0" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen class="img-thumbnail img-full" style="width:250px; height: 150px;" loading="lazy"></iframe>
+                <iframe src="https://www.youtube.com/embed/DpHUnmbPyL0" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen class="img-thumbnail img-full" style="width:250px; height: 150px;" loading="lazy"></iframe>
+                <iframe src="https://www.youtube.com/embed/DpHUnmbPyL0" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen class="img-thumbnail img-full" style="width:250px; height: 150px;" loading="lazy"></iframe>
+
+
+            </div> -->
+
 
 
         </div>
