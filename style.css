@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+li.nav-item {
+    font-weight: 500;
+}
+
+/*  */
+body {
+    background: #E0E4CC
+}
+
+.news {
+    width: 160px
+}
+
+.news-scroll a {
+    text-decoration: none
+}
+
+.dot {
+    height: 6px;
+    width: 6px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 2px !important;
+    background-color: rgb(207, 23, 23);
+    border-radius: 50%;
+    display: inline-block
+}
+a{
+    text-decoration: none;
+    color: #34495E;
+}
+/*  */
+
+.limited-tags {
+    max-height: 420px; /* set the maximum height for the container */
+    overflow-y: auto; /* enable vertical scrolling */
+  }
+  
+  .limited-tags a {
+    display: block;
+   
+  }
+  .quoates-logo{
+    max-width: 100px;
+    border-style: solid;
+    border-color: #2E3192;
+    border-width: 5px;
+    border-radius: 50px;
+  }
+  .quoates-name{
+    font-family: "Hind Siliguri", Sans-serif;
+    font-weight: 700;
+  }
+
+
+.quoates-descrip  {
+    background: #E8F0FE;
+    font-size: 18px;
+    margin: 20px 20px 20px 0px;
+    font-weight: 500;
+    height: 300px;
+}
+.read-more{
+    background: #180092;
+}
+@media screen and (max-width: 767px) {
+  .res-quates{
+    width: 100% !important;
+  }
+    .phone-mail{
+        display: none;
+    }
+    .eiiin{
+        display: none;
+    }
+    .d-flex {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
