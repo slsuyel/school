@@ -99,4 +99,10 @@ h2 {
   }
 
 }
-
+.go-top-btn {
+  background: red;
+  padding: 5px 12px;
+  color: white;
+  border-radius: 50px;
+  position: relative;
+}
