@@ -76,6 +76,9 @@ a ,h2{
   background: #180092;
 }
 
+.footerBottom {
+  margin-top: 11px;
+}
 @media screen and (max-width: 767px) {
 
   .img-full {
@@ -96,4 +99,3 @@ a ,h2{
     flex-direction: column;
     width: 100%;
   }
-}
