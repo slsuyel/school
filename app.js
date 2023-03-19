@@ -47,3 +47,23 @@ limitedTags.addEventListener('mouseover', () => {
 limitedTags.addEventListener('mouseout', () => {
   startScrolling();
 });
+
+
+limitedTags.addEventListener('touchstart', (event) => {
+  clearInterval(scrollIntervalId);
+  const touchStartY = event.touches[0].clientY;
+  limitedTags.addEventListener('touchmove', touchMoveHandler);
+
+  function touchMoveHandler(event) {
+    const touchCurrentY = event.touches[0].clientY;
+    const touchDistance = touchStartY - touchCurrentY;
+    limitedTags.scrollTop += touchDistance;
+    currentScrollTop = limitedTags.scrollTop;
+    touchStartY = touchCurrentY;
+  }
+});
+
+limitedTags.addEventListener('touchend', () => {
+  startScrolling();
+  limitedTags.removeEventListener('touchmove', touchMoveHandler);
+});
