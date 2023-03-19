@@ -128,6 +128,7 @@ h2 {
   display: block;
   max-width: 800px;
   max-height: 80%;
+  width: 91%;
 }
 
 /* Style for the image in the modal */
@@ -155,9 +156,11 @@ h2 {
 .close {
   color: #fff;
   float: right;
-  font-size: 28px;
+  font-size: 36px;
   font-weight: bold;
   cursor: pointer;
+  margin-right: 20px;
+  margin-top: -41px;
 }
 
 /* Style for the close button on hover */
