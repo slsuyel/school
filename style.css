@@ -79,6 +79,13 @@ h2 {
 
 
 @media screen and (max-width: 570px) {
+  .f13{
+    font-size: 13px;
+  }
+  .name {
+    font-size: calc(1.275rem + .3vw) !important;
+  }
+
   .img-full {
     width: 100% !important;
     height: 196px !important;
@@ -99,13 +106,7 @@ h2 {
   }
 
 }
-.go-top-btn {
-  background: red;
-  padding: 5px 12px;
-  color: white;
-  border-radius: 50px;
-  position: relative;
-}
+
 
 /*  */
 /* Style for the modal */
@@ -170,6 +171,7 @@ h2 {
   text-decoration: none;
   cursor: pointer;
 }
+
 .modal-content {
   animation: zoom-in 0.2s ease-out;
 }
@@ -179,11 +181,13 @@ h2 {
     transform: scale(0.5);
     opacity: 0;
   }
+
   to {
     transform: scale(1);
     opacity: 1;
   }
 }
+
 .modal-content {
   transition: all 0.2s ease-out;
 }
@@ -191,4 +195,8 @@ h2 {
 .modal.closed .modal-content {
   transform: scale(0.5);
   opacity: 0;
+}
+
+.limited-tags::-webkit-scrollbar {
+  display: none;
 }
