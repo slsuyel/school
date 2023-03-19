@@ -26,11 +26,24 @@ const maxScrollTop = limitedTags.scrollHeight - limitedTags.clientHeight;
 let currentScrollTop = 0;
 const scrollIncrement = 1;
 const scrollInterval = 30;
+let scrollIntervalId;
 
-setInterval(() => {
-  currentScrollTop += scrollIncrement;
-  if (currentScrollTop >= maxScrollTop) {
-    currentScrollTop = 0;
-  }
-  limitedTags.scrollTop = currentScrollTop;
-}, scrollInterval);
+function startScrolling() {
+  scrollIntervalId = setInterval(() => {
+    currentScrollTop += scrollIncrement;
+    if (currentScrollTop >= maxScrollTop) {
+      currentScrollTop = 0;
+    }
+    limitedTags.scrollTop = currentScrollTop;
+  }, scrollInterval);
+}
+
+startScrolling();
+
+limitedTags.addEventListener('mouseover', () => {
+  clearInterval(scrollIntervalId);
+});
+
+limitedTags.addEventListener('mouseout', () => {
+  startScrolling();
+});
