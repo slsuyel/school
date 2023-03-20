@@ -13,12 +13,12 @@ photos.forEach(photo => {
   });
 });
 
-span.onclick = function() { 
+span.onclick = function () {
   modal.classList.add('closed');
   setTimeout(() => {
     modal.style.display = "none";
     modal.classList.remove('closed');
-  }, 200); 
+  }, 200);
 };
 
 
@@ -26,14 +26,18 @@ span.onclick = function() {
 
 const allA = document.querySelectorAll(".notice-a");
 const mainDiv = document.getElementById('notic-container');
-const div = document.createElement('div');
-div.classList.add('mb-3', 'px-2', 'py-3', 'limited-tags', 'scrolling-hide');
+const marquee = document.createElement('marquee');
+marquee.setAttribute("direction", "up");
+marquee.setAttribute("onmouseover", "this.stop();");
+marquee.setAttribute("onmouseout", "this.start();");
+marquee.classList.add('mb-3', 'px-2', 'py-3', 'limited-tags', 'scrolling-hide');
 
 allA.forEach((a) => {
   a.classList.remove('notice-a');
   a.classList.add('bg-white', 'mb-2', 'p-3');
-  div.innerHTML += `<a href="${a.href}" class="${a.classList}">${a.innerText}</a>`;
+  marquee.innerHTML += ` <a href="${a.href}" class="${a.classList}">${a.innerText}</a>`;
 });
 
-mainDiv.appendChild(div);
+mainDiv.appendChild(marquee);
 
+// onmouseover="this.stop();" onmouseout="this.start();"
