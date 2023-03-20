@@ -47,3 +47,5 @@ limitedTags.addEventListener('mouseover', () => {
 limitedTags.addEventListener('mouseout', () => {
   startScrolling();
 });
+
+/*  dynamic notice */

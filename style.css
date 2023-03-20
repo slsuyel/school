@@ -38,10 +38,8 @@ h2 {
   color: #34495E;
 }
 
-/*  */
-
 .limited-tags {
-  max-height: 360px;
+  max-height: 348px;
   overflow-y: auto;
 
 }
@@ -79,9 +77,10 @@ h2 {
 
 
 @media screen and (max-width: 570px) {
-  .f13{
+  .f13 {
     font-size: 13px;
   }
+
   .name {
     font-size: calc(1.275rem + .3vw) !important;
   }
@@ -197,6 +196,6 @@ h2 {
   opacity: 0;
 }
 
-.limited-tags::-webkit-scrollbar {
+.scrolling-hide::-webkit-scrollbar {
   display: none;
 }
