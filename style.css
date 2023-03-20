@@ -13,6 +13,8 @@ body {
   background: #E0E4CC
 }
 
+
+
 .news {
   width: 160px
 }
@@ -196,6 +198,6 @@ h2 {
   opacity: 0;
 }
 
-.scrolling-hide::-webkit-scrollbar {
+/* .scrolling-hide::-webkit-scrollbar {
   display: none;
-}
+}  */

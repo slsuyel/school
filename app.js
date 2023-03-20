@@ -1,4 +1,4 @@
-
+// picture modal
 const photos = document.querySelectorAll('.photoss');
 const modal = document.getElementById("myModal");
 const modalImg = document.getElementById("img01");
@@ -18,34 +18,22 @@ span.onclick = function() {
   setTimeout(() => {
     modal.style.display = "none";
     modal.classList.remove('closed');
-  }, 200); // delay the removal of the "closed" class to give time for the CSS transition
+  }, 200); 
 };
-// 
-const limitedTags = document.querySelector('.limited-tags');
-const maxScrollTop = limitedTags.scrollHeight - limitedTags.clientHeight;
-let currentScrollTop = 0;
-const scrollIncrement = 1;
-const scrollInterval = 30;
-let scrollIntervalId;
 
-function startScrolling() {
-  scrollIntervalId = setInterval(() => {
-    currentScrollTop += scrollIncrement;
-    if (currentScrollTop >= maxScrollTop) {
-      currentScrollTop = 0;
-    }
-    limitedTags.scrollTop = currentScrollTop;
-  }, scrollInterval);
-}
-
-startScrolling();
-
-limitedTags.addEventListener('mouseover', () => {
-  clearInterval(scrollIntervalId);
-});
-
-limitedTags.addEventListener('mouseout', () => {
-  startScrolling();
-});
 
 /*  dynamic notice */
+
+const allA = document.querySelectorAll(".notice-a");
+const mainDiv = document.getElementById('notic-container');
+const div = document.createElement('div');
+div.classList.add('mb-3', 'px-2', 'py-3', 'limited-tags', 'scrolling-hide');
+
+allA.forEach((a) => {
+  a.classList.remove('notice-a');
+  a.classList.add('bg-white', 'mb-2', 'p-3');
+  div.innerHTML += `<a href="${a.href}" class="${a.classList}">${a.innerText}</a>`;
+});
+
+mainDiv.appendChild(div);
+
